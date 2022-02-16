@@ -23,7 +23,8 @@ public class Worker implements Serializable{
 	
 	public Worker() {}
 
-	public Worker(String name, Double dailyIncome) {
+	public Worker(Long id, String name, Double dailyIncome) {
+		this.id = id;
 		this.name = name;
 		this.dailyIncome = dailyIncome;
 	}
