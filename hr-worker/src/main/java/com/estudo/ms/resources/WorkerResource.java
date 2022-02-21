@@ -50,12 +50,12 @@ public class WorkerResource {
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id){
 	
-		try {    // Por default o ribbon tem 1 segundo de tolerancia de timeout
+		/*try {    // Por default o ribbon tem 1 segundo de tolerancia de timeout
 			Thread.sleep(3000);
 		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+		*/
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		
 		Optional<Worker> worker = repo.findById(id);
