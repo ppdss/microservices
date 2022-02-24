@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.estudo</groupId>
-	<artifactId>hr-user</artifactId>
+	<artifactId>hr-oauth-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hr-oauth-server</name>
 	<description>Authorization Service</description>
